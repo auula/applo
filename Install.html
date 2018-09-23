@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Applo Install</title>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<!-- Your custom styles (optional) -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<style type="text/css">
+			.color-block {
+				text-align: center;
+				height: -webkit-fill-available;
+				color: #fff;
+				padding: 40px;
+			}
+			
+			.aqua {
+				background: -webkit-linear-gradient(50deg, #2096ff, #007bff)!important;
+				background: -o-linear-gradient(50deg, #2096ff, #05ffa3)!important;
+				background: linear-gradient(40deg, #2096ff, #05ffa3)!important;
+			}
+			
+			.messages {
+				margin-bottom: 0px;
+			}
+			
+			.in {
+				width: 150px;
+				float: left;
+				margin-right: 25px;
+				margin-left: 25px;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body style="background-image: url(img/gradient2.png);">
+		<!--初始化系统-->
+		<!--
+        	作者：coding
+        	时间：2018-09-13
+        	描述：配置参数
+        -->
+
+		<div class="card text-center i_1" style="width: 48rem;margin: auto;top:128px;">
+			<div class="card-header primary-color white-text">
+				<!--Applo Initialization-->
+				Applo服务器设置
+			</div>
+			<div class="card-body" style="display:none;">
+				<!--<h4 class="card-title">Applo正在初始化服务器，请稍后~</h4>-->
+				<p class="card-text messages">我们正在从远处的仓库下载核心文件，这个过程取绝你的服务器网络网速. 35%</p>
+				<div class="progress">
+					<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<a class="btn btn-primary btn-sm" disabled="disabled">请 稍 后</a>
+			</div>
+			<div class="card-body">
+				<p class="card-text messages">当前填写的信息为系统核心配置，请认真填写!</p>
+				<form class="text-center  border-light p-5">
+
+					<!-- domain -->
+					<input type="domain" name="domain" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="邮箱绑定域名">
+
+					<!-- dns -->
+					<input type="dns" name="dns" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="网络首选DNS">
+					<!-- sql_url 数据库连接地址 -->
+					<input type="sql_url" name="sql_url" id="defaultLoginFormPassword" class="form-control mb-4 in" placeholder="数据库地址">
+					<input type="sql_url" name="sql_user" id="defaultLoginFormPassword" class="form-control mb-4 in" placeholder="数据库用户名">
+
+					<input type="sql_url" name="sql_pwd" id="defaultLoginFormPassword" class="form-control mb-4 in"  placeholder="数据库密码">
+					<!-- Sign in button -->
+					<button class="btn btn-info btn-block my-4" type="submit" >确 定</button>
+				</form>
+			</div>
+			<div class="card-footer text-muted primary-color white-text">
+				<p class="mb-0">Copyright © 2018 applo.club. All Rights Reserved.</p>
+			</div>
+		</div>
+
+		<!--<div class="i_1 color-block aqua">
+			<h1>正在初始化系统,请稍后~</h1>
+		</div>-->
+		<!-- /Start your project here-->
+
+		<!-- SCRIPTS -->
+		<!-- JQuery -->
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap tooltips -->
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="js/mdb.min.js"></script>
+
+	</body>
+
+</html>
